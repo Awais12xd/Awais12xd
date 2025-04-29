@@ -8,3 +8,5 @@
 🌱 Always learning, improving, and exploring new tools.<br/>
 ```
 
+![](https://img.shields.io/badge/React-%2361DAFB?logo=react&logoColor=white)
+

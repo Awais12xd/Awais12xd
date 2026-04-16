@@ -34,7 +34,7 @@ if (calcBtn && calcResult) {
     const hours = Number(hoursInput?.value || 0);
     const rate = Number(rateInput?.value || 0);
 
-    if (projects <= 0 || hours < 0 || rate <= 0) {
+    if (projects <= 0 || hours <= 0 || rate <= 0) {
       calcResult.textContent = "Please enter valid numbers.";
       return;
     }
@@ -52,8 +52,11 @@ if (form && formResult) {
     const name = String(formData.get("name") || "").trim();
     const email = String(formData.get("email") || "").trim();
 
-    if (!name || !email) {
-      formResult.textContent = "Please fill name and email.";
+    const hasValidEmail =
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email) &&
+      !email.includes("..");
+    if (!name || !email || !hasValidEmail) {
+      formResult.textContent = "Please provide a valid name and email.";
       return;
     }
 

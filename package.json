@@ -1,0 +1,21 @@
+{
+  "name": "scope-creeper-landing",
+  "version": "1.0.0",
+  "description": "Scope Creeper landing website for freelancers to control unpaid scope creep.",
+  "main": "script.js",
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "test": "echo \"No automated tests configured\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Awais12xd/Awais12xd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Awais12xd/Awais12xd/issues"
+  },
+  "homepage": "https://github.com/Awais12xd/Awais12xd#readme"
+}

@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope Creeper — Protect Freelancers From Unpaid Scope Creep</title>
+    <meta
+      name="description"
+      content="Scope Creeper helps freelancers lock project scope, track change requests, and turn extra asks into paid approvals."
+    />
+    <meta property="og:title" content="Scope Creeper" />
+    <meta
+      property="og:description"
+      content="Stop unpaid revisions. Convert out-of-scope requests into instant paid change orders."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#home">Scope Creeper</a>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <nav class="nav" id="main-nav">
+          <a href="#features">Features</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact" class="btn btn-ghost">Get Early Access</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Built for freelancers and agencies</p>
+            <h1>Scope can’t creep when every extra ask needs approval + payment.</h1>
+            <p class="subtitle">
+              Share crystal-clear deliverables, catch out-of-scope requests instantly, and send one-click paid change
+              orders before any extra work starts.
+            </p>
+            <div class="hero-cta">
+              <a href="#pricing" class="btn btn-primary">Start Free</a>
+              <a href="#calculator" class="btn btn-secondary">Estimate Scope Loss</a>
+            </div>
+            <ul class="stats">
+              <li><strong>42%</strong><span>Less unpaid work</span></li>
+              <li><strong>3.7x</strong><span>Faster approvals</span></li>
+              <li><strong>$1,850</strong><span>Avg. monthly recovered revenue</span></li>
+            </ul>
+          </div>
+          <div class="card preview">
+            <h2>Live Scope Protection</h2>
+            <ul>
+              <li><span class="status ok">In Scope</span> Homepage design (1 round revisions)</li>
+              <li><span class="status warn">Out of Scope</span> “Can you also redesign our whole blog?”</li>
+              <li><span class="status paid">Paid Change</span> +$450 approved in 9 minutes</li>
+            </ul>
+            <p class="small">No awkward client chats. Just transparent, professional process.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <h2>Everything you need to stop unpaid extras</h2>
+          <div class="grid features-grid">
+            <article class="card">
+              <h3>Scope Lock Contracts</h3>
+              <p>Use prebuilt, client-friendly scopes with deliverables, limits, and revision caps.</p>
+            </article>
+            <article class="card">
+              <h3>Change Request Detection</h3>
+              <p>Flag new asks from email/chat notes and convert them to paid work requests.</p>
+            </article>
+            <article class="card">
+              <h3>Instant Change Orders</h3>
+              <p>Send one-click approvals with updated fee, timeline impact, and payment links.</p>
+            </article>
+            <article class="card">
+              <h3>Client Activity Timeline</h3>
+              <p>Track every scope update, quote approval, and payment event in one place.</p>
+            </article>
+            <article class="card">
+              <h3>Template Library</h3>
+              <p>Use proven templates for web, branding, content, and retainers.</p>
+            </article>
+            <article class="card">
+              <h3>Revenue Recovery Analytics</h3>
+              <p>See how much income Scope Creeper saved you each week and month.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="workflow">
+        <div class="container">
+          <h2>Simple workflow your clients will actually like</h2>
+          <ol class="timeline">
+            <li><strong>1. Define scope</strong><span>Start each project with clear inclusions and limits.</span></li>
+            <li><strong>2. Catch extra asks</strong><span>Out-of-scope requests are flagged instantly.</span></li>
+            <li><strong>3. Send paid change order</strong><span>Client approves with timeline + cost visible.</span></li>
+            <li><strong>4. Continue confidently</strong><span>You deliver great work without free add-ons.</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="calculator">
+        <div class="container">
+          <h2>Scope Loss Calculator</h2>
+          <p class="subtitle">See how much unpaid scope creep is costing your freelance business each month.</p>
+          <div class="card calculator">
+            <label>
+              Projects per month
+              <input id="projects" type="number" min="1" value="6" />
+            </label>
+            <label>
+              Average unpaid extra hours per project
+              <input id="hours" type="number" min="1" value="4" />
+            </label>
+            <label>
+              Your hourly rate (USD)
+              <input id="rate" type="number" min="1" value="50" />
+            </label>
+            <button id="calc-btn" class="btn btn-primary">Calculate my loss</button>
+            <p class="result" id="calc-result" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="pricing">
+        <div class="container">
+          <h2>Fair pricing that pays for itself fast</h2>
+          <div class="grid pricing-grid">
+            <article class="card price">
+              <h3>Starter</h3>
+              <p class="price-value">$0<span>/month</span></p>
+              <ul>
+                <li>Up to 2 active projects</li>
+                <li>Basic scope templates</li>
+                <li>Manual change orders</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary">Get Started</a>
+            </article>
+            <article class="card price featured">
+              <p class="tag">Most Popular</p>
+              <h3>Pro Freelancer</h3>
+              <p class="price-value">$19<span>/month</span></p>
+              <ul>
+                <li>Unlimited projects</li>
+                <li>Automatic scope detection</li>
+                <li>Online payment links</li>
+                <li>Revenue recovery dashboard</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary">Start 14-Day Trial</a>
+            </article>
+            <article class="card price">
+              <h3>Studio</h3>
+              <p class="price-value">$49<span>/month</span></p>
+              <ul>
+                <li>Up to 5 team members</li>
+                <li>Shared templates + roles</li>
+                <li>Client portal branding</li>
+                <li>Priority support</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary">Talk to Sales</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <h2>Frequently asked questions</h2>
+          <div class="faq-list">
+            <details class="card">
+              <summary>Will this annoy my clients?</summary>
+              <p>No. Clients get transparency, clear options, and faster approvals with fewer misunderstandings.</p>
+            </details>
+            <details class="card">
+              <summary>Can I use this for fixed-price projects?</summary>
+              <p>Yes. Scope Creeper is ideal for fixed-price projects where boundaries must stay clear.</p>
+            </details>
+            <details class="card">
+              <summary>Do I need legal templates?</summary>
+              <p>We include starter language, and you can customize all scope templates to your legal needs.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <h2>Start protecting your time today</h2>
+            <p class="subtitle">Join the launch list and get early access + premium scope templates.</p>
+          </div>
+          <form class="card contact-form">
+            <label>
+              Full name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Work email
+              <input type="email" name="email" placeholder="you@business.com" required />
+            </label>
+            <label>
+              What services do you sell?
+              <input type="text" name="service" placeholder="Web design, branding, etc." />
+            </label>
+            <button class="btn btn-primary" type="submit">Join Waitlist</button>
+            <p class="small">By submitting, you agree to receive product updates. No spam.</p>
+            <p class="result" id="form-result" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Scope Creeper. All rights reserved.</p>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

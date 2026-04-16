@@ -12,9 +12,9 @@ Then open `http://localhost:4173`.
 
 ## Files
 
-- `/home/runner/work/Awais12xd/Awais12xd/index.html` — page structure and content
-- `/home/runner/work/Awais12xd/Awais12xd/styles.css` — responsive UI and design system
-- `/home/runner/work/Awais12xd/Awais12xd/script.js` — interactions (mobile menu, calculator, form UX)
+- `index.html` — page structure and content
+- `styles.css` — responsive UI and design system
+- `script.js` — interactions (mobile menu, calculator, form UX)
 
 ## Deploy
 
